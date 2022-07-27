@@ -1,0 +1,83 @@
+:root {
+    --color-link: #2B59C3;
+    --color-highlight: #527cdd;
+    --color-light: #d9d9d9;
+    --color-dark: #272d2d;
+    --width-outer: 1200px;
+}
+
+html {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    line-height: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-highlight);
+}
+
+b, strong, .bold {
+    font-weight: 600;
+}
+
+b b, b strong, strong strong, strong b, .black {
+    font-weight: 800;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero .wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.hero h1 {
+    flex: 1;
+
+    font-weight: 400;
+}
+
+.hero p {
+    flex: 1;
+
+    font-weight: 100;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    max-width: 42rem;
+}
+
+.hero nav {
+    flex: 1;
+
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.hero nav a {
+    color: var(--color-light);
+}
+
+.hero nav svg {
+    color: var(--color-link);
+    display: inline-block;
+    min-width: 1rem;
+    margin-right: 0.25rem;
+}
